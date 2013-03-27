@@ -1,11 +1,14 @@
 <?php
 /*
-* Plugin Name: Advanced Custom Fields - Location Field add-on
-* Plugin URI:  https://github.com/julienbechade/acf-location-field
+* Plugin Name: Advanced Custom Fields - Location Field add-on - CUSTOM
+* Plugin URI:  https://github.com/jessekahner/acf-location-field
 * Description: This plugin is an add-on for Advanced Custom Fields. It allows you to find coordinates and/or address of a location with Google Maps.
-* Author:      Julien Bechade
-* Author URI:  http://julienbechade.com/
-* Version:     1.0
+* Author:      Bang Marketing
+* Author URI:  http://www.bang-marketing.com/
+* Original Author:      Julien Bechade
+* Original Author URI:  http://julienbechade.com/
+* Version:     0.1.0
+* Original Version:     1.0
 * Text Domain: acf-location-field
 * Domain Path: /lang/
 */
@@ -20,6 +23,8 @@ if( !class_exists( 'ACF_Location_Field' ) && class_exists( 'acf_Field' ) ) :
  * @version 1.0
  *
  */
+
+
 
 class ACF_Location_Field extends acf_Field
 {
@@ -127,7 +132,7 @@ class ACF_Location_Field extends acf_Field
 	 
 	private function set_field_defaults(&$field)
 	{
-		$field['center'] = isset($field['center']) ? $field['center'] : '48.856614,2.3522219000000177';
+		$field['center'] = isset($field['center']) ? $field['center'] : '45.5077369,-73.5542982';
 		$field['zoom'] = isset($field['zoom']) ? $field['zoom'] : '2';
 		$field['val'] = isset($field['val']) ? $field['val'] : 'address';
 		$field['scrollwheel'] = isset($field['scrollwheel']) ? $field['scrollwheel'] : '1';
